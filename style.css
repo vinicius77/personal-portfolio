@@ -121,6 +121,56 @@ div#content span {
 }
 
 /* ================================= 
+   P r o j e c t s   S e c t i o n
+==================================== */
+section#projects {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding-top: 10vh;
+  width: 100%;
+  justify-content: center;
+  background-color: #f4f0f0;
+  color: #444;
+}
+
+div.project-tile {
+  text-align: center;
+  margin-bottom: 44px;
+}
+
+div.project-tile h2 {
+  font-size: 40px;
+  letter-spacing: 5px;
+  margin-top: -100px;
+}
+
+div#grid-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 120px 120px 120px;
+  grid-template-rows: 100px 100px;
+  grid-gap: 30px;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 100%;
+  text-align: center;
+  background-image: url('./assets/grid-github-img.png');
+  background-repeat: none;
+  background-size: cover;
+  background-position: center center;
+}
+
+.box a {
+  color: white;
+}
+
+/* ================================= 
       M e d i a    Q u e r i e s
 ==================================== */
 @media (max-width: 800px) {
@@ -141,6 +191,11 @@ div#content span {
   .brand a {
     font-size: 20px;
     padding: 10px;
+  }
+
+  div#grid-container {
+    grid-template-columns: 110px 110px 110px;
+    grid-gap: 20px;
   }
 }
 @media (max-width: 420px) {
@@ -164,5 +219,10 @@ div#content span {
     font-size: 17px;
     letter-spacing: 2px;
     margin-top: 28px;
+  }
+
+  div#grid-container {
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 10px;
   }
 }
