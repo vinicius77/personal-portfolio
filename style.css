@@ -1,6 +1,98 @@
-#welcome {
-  height: 100vh;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (max-width: 700px) {
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+}
+
+/* ================================= 
+              N a v b a r 
+==================================== */
+
+nav h1,
+nav a {
+  color: #34495e;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.brand {
+  font-size: 1.45em;
+}
+
+ul.main-nav {
+  margin-top: 5px;
+}
+
+.main-nav a {
+  color: #34495e;
+  font-size: 0.99em;
+}
+
+.main-nav a:hover {
+  color: #b8cadd;
+  border-bottom: 2px solid #b8cadd;
+  padding-bottom: 5px;
+}
+
+.brand a {
+  color: #b8cadd;
+}
+
+.main-nav,
+#navbar {
+  display: flex;
+}
+
+.brand a,
+.main-nav a {
+  padding: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+}
+
+#navbar {
+  justify-content: space-between;
+  background-color: #718daa;
+  border-bottom: 1px solid #506070;
+}
+
+/* ================================= 
+    W e l c o m e     S e c t i o n 
+==================================== */
+
+#welcome {
+  min-height: 100vh;
+}
+
+/* ================================= 
+      M e d i a    Q u e r i e s
+==================================== */
+
+@media (max-width: 490px) {
+  .main-nav a {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+
+  .brand a {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+@media (max-width: 420px) {
+  .main-nav {
+    display: none;
+  }
 }
